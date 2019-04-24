@@ -1,2 +1,2 @@
 # R3-Verkkokauppa
-Web-tekniikatprojekti
+Web-tekniikat projekti
