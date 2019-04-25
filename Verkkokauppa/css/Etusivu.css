@@ -1,0 +1,31 @@
+body {
+    background-color: lightblue;
+}
+
+.top {
+    text-align: center;
+}
+
+.login {
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+
+.haku {
+    position: absolute;
+    right: 20px;
+}
+
+.keskiosa {
+    margin-top: 50px;
+    text-align: center;
+    background-color: white;
+    height: 200px;
+    width: 100%;
+}
+
+.uutiskirje{
+    position: absolute;
+    right: 20px;
+}
