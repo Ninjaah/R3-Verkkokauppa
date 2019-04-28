@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24fb9e46-f0ae-4e31-a36d-1dbfac2e38b5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Verkkokauppa/HTML/Etusivu.html" beforeDir="false" afterPath="$PROJECT_DIR$/Verkkokauppa/HTML/Etusivu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Verkkokauppa/css/Etusivu.css" beforeDir="false" afterPath="$PROJECT_DIR$/Verkkokauppa/css/Etusivu.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Verkkokauppa/css/Verkkokauppa.css" beforeDir="false" afterPath="$PROJECT_DIR$/Verkkokauppa/css/Verkkokauppa.css" afterDir="false" />
     </list>
@@ -40,7 +40,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Verkkokauppa/HTML/Verkkokauppa.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1345">
+            <state relative-caret-position="389">
               <caret line="71" column="36" selection-start-line="71" selection-start-column="29" selection-end-line="71" selection-end-column="36" />
             </state>
           </provider>
@@ -49,8 +49,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Verkkokauppa/css/Etusivu.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="67" column="18" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
+            <state relative-caret-position="315">
+              <caret line="68" column="16" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -58,8 +58,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Verkkokauppa/css/Verkkokauppa.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="143" column="4" selection-start-line="143" selection-start-column="4" selection-end-line="143" selection-end-column="4" />
+            <state relative-caret-position="332">
+              <caret line="141" column="18" selection-start-line="141" selection-start-column="18" selection-end-line="141" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -170,16 +170,15 @@
       <workItem from="1556182691506" duration="217000" />
       <workItem from="1556183057330" duration="357000" />
       <workItem from="1556390421991" duration="1073000" />
-      <workItem from="1556435368764" duration="3474000" />
+      <workItem from="1556435368764" duration="3982000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5121000" />
+    <option name="totallyTimeSpent" value="5629000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="481" y="105" width="1400" height="958" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26119402" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -240,24 +239,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Verkkokauppa/HTML/Verkkokauppa.html">
+    <entry file="file://$PROJECT_DIR$/Verkkokauppa/css/Etusivu.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1345">
-          <caret line="71" column="36" selection-start-line="71" selection-start-column="29" selection-end-line="71" selection-end-column="36" />
+        <state relative-caret-position="315">
+          <caret line="68" column="16" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Verkkokauppa/css/Etusivu.css">
+    <entry file="file://$PROJECT_DIR$/Verkkokauppa/HTML/Verkkokauppa.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="67" column="18" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
+        <state relative-caret-position="389">
+          <caret line="71" column="36" selection-start-line="71" selection-start-column="29" selection-end-line="71" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Verkkokauppa/css/Verkkokauppa.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="143" column="4" selection-start-line="143" selection-start-column="4" selection-end-line="143" selection-end-column="4" />
+        <state relative-caret-position="332">
+          <caret line="141" column="18" selection-start-line="141" selection-start-column="18" selection-end-line="141" selection-end-column="18" />
         </state>
       </provider>
     </entry>
