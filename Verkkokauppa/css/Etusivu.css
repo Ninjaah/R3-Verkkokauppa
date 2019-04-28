@@ -21,11 +21,50 @@ body {
     margin-top: 50px;
     text-align: center;
     background-color: white;
-    height: 200px;
+    height: 400px;
     width: 100%;
+
+}
+
+.item1 {
+    bottom: 10px;
+    width: 20%;
+    float: right;
+    border: solid black;
+    margin-right: 120px;
+}
+
+.item2 {
+    width: 20%;
+    float: right;
+    border: solid black;
+    margin-right: 40px;
+    margin-left: 10px;
+}
+
+.item3 {
+    width: 20%;
+    float: right;
+    border: solid black;
+    margin-right: 40px;
+}
+
+.item4 {
+    width: 20%;
+    float: right;
+    border: solid black;
+    margin-right: 40px;
+
 }
 
 .uutiskirje{
     position: absolute;
     right: 20px;
+}
+
+footer {
+    margin-top: 0px;
+    padding: 30px;
+    height: 100px;
+
 }
