@@ -1,0 +1,41 @@
+.infot {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.infot label {
+    margin: 5px 10px 5px 0;
+}
+
+.infot input {
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.infot button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: dodgerblue;
+    border: 1px solid #ddd;
+    color: white;
+}
+
+.infot button:hover {
+    background-color: royalblue;
+}
+
+
+@media (max-width: 800px) {
+    .infot input {
+        margin: 10px 0;
+    }
+
+    .infot {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+

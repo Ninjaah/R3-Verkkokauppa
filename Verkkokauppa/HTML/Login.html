@@ -2,9 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verkkokauppa</title>
+    <link rel="stylesheet" href="../css/Etusivu.css">
+    <link rel="stylesheet" href="../css/Login.css">
 </head>
 <body>
+<div id="sisalto">
+    <header>
+        <div class="top">
+            <div class="login">
+                <a>Login</a>
+                <a>Sign up</a>
+            </div>
+            <h1>Verkkokauppa</h1>
+            <div class="haku">
+                <div class="nav">
+                    <a href="Etusivu.html">Etusivu</a>
+                    <a href="Verkkokauppa.html">Tuotteet</a>
+                    <a>Ota yhteyttä</a>
+                    <a>Ostoskori</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="keskiosa">
+        <h2>Luo käyttäjätunnus</h2>
 
+        <form>
+            <div class="infot">
+                <label><b>Sähköposti</b></label>
+                <input type="text" placeholder="Sähköposti..." name="email" required>
+
+                <label><b>Salasana</b></label>
+                <input type="password" placeholder="Salasana..." name="ss" required>
+
+                <label><b>Salasana uudelleen</b></label>
+                <input type="password" placeholder="Salasana uudelleen..." name="ss-repeat" required>
+                <input type="checkbox" checked="checked"> Muista minut
+                <div class="napit">
+                    <button type="button" class="cancel">Peruuta</button>
+                    <button type="submit" class="signup">Luo tili</button>
+                </div>
+            </div>
+        </form>
+    </div>
 </body>
+
+<footer>
+    <div class="uutiskirje">
+        <form>
+            Tilaa uutiskirjeemme
+            <input type="email" name="newsletter" placeholder="Sähköposti...">
+            <button id="send">Lähetä</button>
+        </form>
+    </div>
+</footer>
+
 </html>
