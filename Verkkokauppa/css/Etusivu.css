@@ -100,3 +100,20 @@ footer {
     text-align: right;
     margin-top: 20px;
 }
+
+a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+a:active {
+    color: black;
+    text-decoration: underline;
+}
