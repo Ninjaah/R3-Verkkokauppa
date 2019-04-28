@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tuotteet</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/tuotesivu.css">
+</head>
+<body>
+<header>
+    <div class="top">
+        <div class="login">
+            <a>Login</a>
+            <a>Sign up</a>
+        </div>
+        <h1>Verkkokauppa</h1>
+        <div class="haku">
+            <div class="nav">
+                <a href="Etusivu.html">Etusivu</a>
+                <a href="Verkkokauppa.html">Tuotteet</a>
+                <a>Ota yhteyttä</a>
+                <a>Ostoskori</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div id="sisalto">
+    <h1 id="tuotenimi">MSI Creator</h1>
+    <div id="tuotekuva">
+        <img class="nakyy" id="kuva1" src="../pics/msi2.png" />
+        <img class="hidden" id="kuva2" src="../pics/msi3.png">
+        <img class="hidden" id="kuva3" src="../pics/msi4.png">
+    </div>
+    <div id="tuoteinfo">
+        <p> <h3>MSI 15.6" P65 Creator 8RD 1779,00€</h3>
+        Tekniset tiedot: <br>
+
+        Käyttöjärjestelmä: Windows 10<br>
+        Näyttö: 15,6", Anti-Glare, IPS, 1920 x 1080<br>
+        Prosessori: Intel Core i7-8750H, 2.20 - 4.10 GHz, 9MB, 6-Core<br>
+        Näytönohjain: NVIDIA GeForce GTX 1050 Ti, 4GB GDDR5<br>
+        Muisti: 16GB (2 x 8GB) DDR4<br>
+        Kiintolevy: 512GB SSD (NVMe)<br>
+        Optinen asema: Ei<br>
+        4G/LTE-modeemi: Ei<br>
+        WLAN: 802.11ac<br>
+        Bluetooth: Kyllä<br>
+        Kortinlukija: Ei<br>
+        Liitännät:<br>
+        - HDMI (4K @ 30Hz)<br>
+        - Mini-DisplayPort<br>
+        - 3 x USB 3.1 Type-A Gen1<br>
+        - 1 x USB 3.1 Type-C Gen1<br>
+        - RJ-45<br>
+        - Mikrofoni sisään<br>
+        - Kuulokelähtö<br>
+
+        Akku: 4-kennoinen, 82 Wh<br>
+        Mitat (LxSxK): 357,7 x 247,7 x 17,9 mm<br>
+        Paino: 1,88 kg<br>
+        </p>
+    </div>
+    <p><button id="lisaa">Lisää ostoskoriin</button></p>
+    <div id="thumbs"><img class="thumb kuva" id="kuva1t" src="../pics/msi2.png"> <img class="thumb" id="kuva2t" src="../pics/msi3.png"> <img class="thumb" id="kuva3t" src="../pics/msi4.png"></div>
+</div>
+<footer>
+
+    <form>
+        Tilaa uutiskirjeemme
+        <input type="email" name="newsletter" placeholder="Email...">
+        <button id="send">send</button>
+    </form>
+
+</footer>
+<script>
+    kan_nappi = document.getElementById("kuva1t");
+    kan_nappi.onclick = function () {
+        var kuva = document.querySelectorAll('.nakyy');
+        for (var i = 0; i < kuva.length; i++) {
+            kuva[i].classList.remove('nakyy')
+        }
+        for (var i = 0; i < kuva.length; i++) {
+            kuva[i].classList.add('hidden')
+        }
+        var kuva = document.getElementById('kuva1');
+        kuva.classList.remove('hidden');
+        kuva.classList.add('nakyy');
+    };
+
+    kan_nappi = document.getElementById("kuva2t");
+    kan_nappi.onclick = function () {
+    var kuva = document.querySelectorAll('.nakyy');
+    for (var i = 0; i < kuva.length; i++) {
+        kuva[i].classList.remove('nakyy')
+    }
+    for (var i = 0; i < kuva.length; i++) {
+        kuva[i].classList.add('hidden')
+    }
+    var kuva = document.getElementById('kuva2');
+    kuva.classList.remove('hidden');
+    kuva.classList.add('nakyy');
+    };
+
+    kan_nappi = document.getElementById("kuva3t");
+    kan_nappi.onclick = function () {
+        var kuva = document.querySelectorAll('.nakyy');
+        for (var i = 0; i < kuva.length; i++) {
+            kuva[i].classList.remove('nakyy')
+        }
+        for (var i = 0; i < kuva.length; i++) {
+            kuva[i].classList.add('hidden')
+        }
+        var kuva = document.getElementById('kuva3');
+        kuva.classList.remove('hidden');
+        kuva.classList.add('nakyy');
+    };
+
+</script>
+<script>
+    console.log(screen.width);
+    if (screen.width < 1255){
+        var info = document.getElementById('tuotekuva');
+        info.appendChild(document.getElementById('thumbs'));
+    }
+</script>
+</body>
+</html>
