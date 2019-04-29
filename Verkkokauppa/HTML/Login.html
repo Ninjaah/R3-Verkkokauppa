@@ -29,7 +29,8 @@
     <div class="keskiosa">
         <h2>Luo käyttäjätunnus</h2>
 
-        <form>
+        <form action="../php/addUser.php" method="post"> <!-- Tämä "yhdistää" html-filun suoraan php-filuun.
+            Voidaan myös käyttää js-filun kautta jos halutaan. -->
             <div class="infot">
                 <label><b>Sähköposti</b></label>
                 <input type="text" placeholder="Sähköposti..." name="email" required>
