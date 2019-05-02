@@ -8,9 +8,9 @@
 
 //Tänne oikeat tiedot kun ne on selvillä!
 $server = "localhost";
-$user = "user";
-$pw = "password";
-$db = "database";
+$user = "admin";
+$pw = "admin123";
+$db = "verkkokauppa";
 
 $connect = mysqli_connect($server, $user, $pw, $db);
 
@@ -21,13 +21,20 @@ if(!$connect) {
 
 //Nämä samat kuin Login.html filussa. Siellä oma kommentti form-elementin sisällä.
 $email = $_POST["email"];
-$password = $_POST["password"];
+$password = $_POST["ss"];
 
 //?-merkillä merkityt ovat vain placeholder-nimiä...
-$sqlQuery = "INSERT INTO db? (email?, password?) VALUES ('$email', '$password')";
+$sqlQuery = "INSERT INTO users (email, password) VALUES ('$email', '$password')";
 
 $result = mysqli_query($connect, $sqlQuery);
 
-if (!$result) {} //Tapahtuu kamalaa
+if (!$result) {
+    echo "Käyttäjätilin luonti epäonnistui!";
+}
 
-else {} //Tapahtuu hyviä asioita
+else {
+    echo "Käyttäjätilin luonti onnistui!";
+}
+
+
+header("Location: ../HTML/Etusivu.html");
