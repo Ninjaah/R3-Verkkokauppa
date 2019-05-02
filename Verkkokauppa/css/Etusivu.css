@@ -58,36 +58,36 @@ h1 {
 
 }
 
-.item1 {
-    bottom: 10px;
-    width: 20%;
-    float: right;
-    border: solid black;
-    margin-right: 120px;
+.tuotteet {
+    height: 283px;
+    width: 300px;
+    display: inline-block;
+    margin: 15px 15px;
+    border: 1px solid black;
+    background-color: #ffffff;
 }
 
-.item2 {
-    width: 20%;
-    float: right;
-    border: solid black;
-    margin-right: 40px;
-    margin-left: 10px;
+
+.pname {
+    margin: 5px;
 }
 
-.item3 {
-    width: 20%;
-    float: right;
-    border: solid black;
-    margin-right: 40px;
+.pinfo {
+    margin:10px;
 }
-
-.item4 {
-    width: 20%;
-    float: right;
-    border: solid black;
-    margin-right: 40px;
+.pinfo li {
+    text-align: left;
 
 }
+.hinta {
+    font-weight: bold;
+    font-size: 18px;
+    margin:5px;
+}
+.pkuva {
+    margin: 0;
+}
+
 
 .uutiskirje{
     position: absolute;
