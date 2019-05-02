@@ -1,7 +1,7 @@
 .infot {
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
+    width: 150px;
 }
 
 .infot label {
@@ -21,6 +21,8 @@
     background-color: dodgerblue;
     border: 1px solid #ddd;
     color: white;
+
+
 }
 
 .infot button:hover {
