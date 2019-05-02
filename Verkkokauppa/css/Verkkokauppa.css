@@ -126,6 +126,9 @@ h3:hover {
     font-size: 18px;
     margin:5px;
 }
+.hinta s {
+    font-weight: normal;
+}
 .pkuva {
     margin: 0;
 }
