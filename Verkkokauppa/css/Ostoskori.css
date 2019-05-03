@@ -1,0 +1,211 @@
+body {
+    background-color: grey;
+}
+
+.top {
+    padding-top: 5px;
+    padding-right: 5px;
+    text-align: center;
+    background-image: url("../pics/hieno.jpg");
+    height: 170px;
+    width: 100%;
+    border-bottom: solid;
+    max-width: 1630px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: yellow;
+    text-shadow:2px 2px #ffffff;
+    text-align: center;
+}
+
+h3 {
+    color: black;
+}
+h3:hover {
+    text-decoration: underline;
+}
+.login {
+    margin-top: 0;
+    height: 20px;
+    text-align: right;
+    color: white;
+}
+
+.haku {
+    margin-top: 60px;
+    height: 30px;
+    padding-top: 10px;
+    color: white;
+    text-align: right;
+
+}
+
+.keskiosa {
+    margin-top: 50px;
+    text-align: center;
+    background-color: white;
+    height: 200px;
+    width: 100%;
+}
+
+.uutiskirje{
+    position: absolute;
+    right: 20px;
+}
+
+#sisalto {
+    max-width: 1630px;
+    margin: 0 auto;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 100px;
+}
+
+#kori {
+    margin-left: 100px;
+    max-width: 700px;
+}
+
+table {
+    text-align: left;
+}
+
+td {
+    text-align: left;
+    width: 600px;
+}
+
+#ostoskori img {
+    height: 100px;
+}
+
+#ostoskori p {
+
+}
+
+#total {
+    float: right;
+    margin-right: 120px;
+}
+
+#sisaltoi {
+
+}
+@media only screen and (min-width: 2560px) {
+    #sisalto{
+
+    }
+}
+
+#kategoriat {
+    width: 180px;
+    margin: 10px;
+    display: inline-block;
+}
+
+#kategoriat li {
+    font-size: 18px;
+    color: black;
+    display: inline-block;
+    list-style-type: none;
+    padding: 5px 20px;
+    float: none;
+    margin: 2px;
+    background-color: white;
+    width: 190px;
+    border: 1px solid black;
+}
+
+#kategoriat li:hover{
+    background-color: lightcoral;
+}
+
+
+#tuotelista {
+    text-align: center;
+    max-width: 1350px;
+    float: right;
+}
+
+.tuotteet {
+    height: 283px;
+    width: 300px;
+    display: inline-block;
+    margin: 15px 15px;
+    border: 1px solid black;
+    background-color: #ffffff;
+    position: relative;
+}
+
+
+.pname {
+    margin: 5px;
+}
+
+.pinfo {
+    margin:10px;
+}
+.pinfo li {
+    text-align: left;
+
+}
+.hinta {
+    font-weight: bold;
+    font-size: 18px;
+    margin:5px;
+}
+.hinta s {
+    font-weight: normal;
+}
+.pkuva {
+    margin: 0;
+}
+
+.cart {
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+    background-color: rgba(113, 218, 0, 0.71);
+    border-radius: 4px;
+    border: 1px solid darkgreen;
+}
+
+.cart:hover {
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+    background-color: rgb(88, 175, 0);
+    border-radius: 4px;
+    border: 1px solid darkgreen;
+}
+
+.hidden {
+    display:none;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    text-decoration: underline;
+}
+footer {
+    height: 100px;
+    background-color: grey;
+    z-index: 10;
+    position: relative;
+    clear: both;
+    text-align: right;
+    margin-top: 20px;
+    max-width: 1788px;
+}

@@ -23,7 +23,7 @@
                 <a href="Etusivu.html">Etusivu</a>
                 <a href="Verkkokauppa.html">Tuotteet</a>
                 <a>Ota yhteyttä</a>
-                <a>Ostoskori</a>
+                <a href="Ostoskori.html">Ostoskori</a>
             </div>
         </div>
     </div>
@@ -272,7 +272,9 @@
 </footer>
 
 <script>
+
     function cartClick(itemId, ItemName) {
+
         var x = itemId;
         var y = ItemName;
         if (itemId === 6 || itemId === 8 || itemId === 11) {
@@ -280,7 +282,7 @@
         }
         console.log(x + " " + y + " added to cart");
 
-        localStorage.ostoskori += x+",";
+        localStorage.ostoskori += ","+x;
         console.log(localStorage.getItem("ostoskori"));
     }
 
