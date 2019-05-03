@@ -33,10 +33,10 @@
             <h1>Verkkokauppa</h1>
             <div class="haku">
                 <div class="nav">
-
+                    <a href="Etusivu.html">Etusivu</a>
                     <a href="Verkkokauppa.html">Tuotteet</a>
                     <a>Ota yhteyttä</a>
-                    <a>Ostoskori</a>
+                    <a href="Ostoskori.html">Ostoskori</a>
                 </div>
             </div>
         </div>
@@ -52,6 +52,9 @@
             </ul>
             <p class="hinta"><s>1329,90€</s>   1199,90€</p>
             <img class="pkuva" src="../pics/2_456690-3000x2261.jpg" style="height:132px;">
+            <img class="cart" src="../pics/shopping_cart_PNG33.png" height="30"
+                 onclick="cartClick(6, 'Lenovo ThinkPad E480 14')"/>
+
         </div>
         <div class="tuotteet">
             <h3 class="pname">Asus GL703GM 17,3"</h3>
@@ -63,6 +66,8 @@
             </ul>
             <p class="hinta"><s>1799,90€</s>   1649,90€</p>
             <img class="pkuva" src="../pics/2_489510-1112x760.jpeg" style="height:132px;">
+            <img class="cart" src="../pics/shopping_cart_PNG33.png" height="30"
+                 onclick="cartClick(11, 'Asus GL703GM 17,3')"/>
         </div>
         <div class="tuotteet">
             <h3 class="pname">Logitech B100 -hiiri</h3>
@@ -74,6 +79,8 @@
             </ul>
             <p class="hinta"><s>12,90€</s>   9,90€</p>
             <img class="pkuva" src="../pics/2_343877-488x338.jpg" style="height:132px;">
+            <img class="cart" src="../pics/shopping_cart_PNG33.png" height="30"
+                 onclick="cartClick(13, 'Logitech B100')"/>
         </div>
         <div class="tuotteet">
             <h3 class="pname">Kingston HyperX FURY DDR4</h3>
@@ -85,9 +92,26 @@
             </ul>
             <p class="hinta"><s>100,90€</s>   89,90€</p>
             <img class="pkuva" src="../pics/2_392408-780x399.jpeg" style="width:258px;height:132px;">
+            <img class="cart" src="../pics/shopping_cart_PNG33.png" height="30"
+                 onclick="cartClick(3, 'Kingston HyperX FURY DDR4 2x8Gt')"/>
         </div>
     </div>
 </div>
+<script>
+    function cartClick(itemId, ItemName) {
+
+        var x = itemId;
+        var y = ItemName;
+        if (itemId === 6 || itemId === 8 || itemId === 11) {
+            y = ItemName+"\""
+        }
+        console.log(x + " " + y + " added to cart");
+
+        localStorage.ostoskori += ","+x;
+        console.log(localStorage.getItem("ostoskori"));
+    }
+
+</script>
 </body>
 
 <footer>
