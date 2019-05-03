@@ -32,18 +32,18 @@
 
 <div id="sisalto">
     <div id="sisaltoi">
-    <ul ID="kategoriat">
-        <li id="kaikki">Näytä kaikki</li>
-        <li id="kannettavat">Kannettavat</li>
-        <li id="pckomp">PC-komponentit</li>
-        <li id="puhelimet">Puhelimet</li>
-        <li id="accessories">Oheislaitteet ja Tarvikkeet</li>
+        <ul ID="kategoriat">
+            <li id="kaikki">Näytä kaikki</li>
+            <li id="kannettavat">Kannettavat</li>
+            <li id="pckomp">PC-komponentit</li>
+            <li id="puhelimet">Puhelimet</li>
+            <li id="accessories">Oheislaitteet ja Tarvikkeet</li>
 
-    </ul>
+        </ul>
 
         <div id="tuotelista">
             <div class="tuotteet puhelin">
-                <h3 class="pname">Oneplus 6 64Gt</h3>
+                <h3 class="pname" id="1">Oneplus 6 64Gt</h3>
                 <ul class="pinfo">
                     <li>8-core Qualcomm Snapdragon 845</li>
                     <li>6 Gt RAM ja 64 Gt tallennustilaa</li>
@@ -52,6 +52,8 @@
                 </ul>
                 <p class="hinta">518,40€</p>
                 <img class="pkuva" src="../pics/OnePlus_6_MirrorBlack_image1.png" style="height:132px;">
+                <img class="cart" src="../pics/shopping_cart_PNG33.png" height="30"
+                     onclick="cartClick(1, 'Oneplus 6 64Gt')"/>
 
             </div>
             <div class="tuotteet kannettava">
@@ -64,7 +66,8 @@
                 </ul>
                 <p class="hinta">1779,00€</p>
                 <img class="pkuva" src="../pics/msi4.1.png" style="width:220px;height:132px;">
-
+                <img class="cart" src="../pics/shopping_cart_PNG33.png" height="30"
+                     onclick="cartClick(2, 'MSI 15,6 P65 Creator 8RD')"/>
             </div>
             <div class="tuotteet pc">
                 <h3 class="pname">Kingston HyperX FURY DDR4</h3>
@@ -74,49 +77,62 @@
                     <li>Non-ECC</li>
                     <li>Käyttöjännite: 1,2 V</li>
                 </ul>
-                <p class="hinta"><s>100,90€</s>   89,90€</p>
+                <p class="hinta"><s>100,90€</s> 89,90€</p>
                 <img class="pkuva" src="../pics/2_392408-780x399.jpeg" style="width:258px;height:132px;">
+                <img class="cart" src="../pics/shopping_cart_PNG33.png" height="30"
+                     onclick="cartClick(3, 'Kingston HyperX FURY DDR4 2x8Gt')"/>
             </div>
             <div class="tuotteet pc">
-                <h3 class="pname">MSI Radeon VII 16G Radeon VII</h3>
+                <h3 class="pname">MSI Radeon VII 16G</h3>
                 <ul class="pinfo">
                     <li>Huipputason näytönohjain pelaamiseen ja ammattilaisille</li>
                     <li>16 Gt HBM2-muistia</li>
                 </ul>
                 <p class="hinta">799,90€</p>
                 <img class="pkuva" src="../pics/2_531432-1024x818.jpg" style="height:150px;">
+                <img class="cart" src="../pics/shopping_cart_PNG33.png" height="30"
+                     onclick="cartClick(4, 'MSI Radeon VII 16G')"/>
             </div>
 
             <div class="tuotteet puhelin">
-                <h3 class="pname">Huawei P30 128 Gt</h3>
-                <ul class="pinfo"> <li>Leican kolmoiskamera</li>
+                <h3 class="pname">Huawei P30 128Gt</h3>
+                <ul class="pinfo">
+                    <li>Leican kolmoiskamera</li>
                     <li>128 Gt, 6 Gt RAM, nanoSD</li>
                     <li>Kirin 980 -tekoälyprosessori</li>
                     <li>6.1” FHD+ OLED-näyttö</li>
                 </ul>
                 <p class="hinta">699,90€</p>
                 <img class="pkuva" src="../pics/2_532749-672x1096.jpg" style="height:132px;">
+                <img class="cart" src="../pics/shopping_cart_PNG33.png" height="30"
+                     onclick="cartClick(5, 'Huawei P30 128Gt')"/>
             </div>
             <div class="tuotteet kannettava">
                 <h3 class="pname">Lenovo ThinkPad E480 14"</h3>
-                <ul class="pinfo"> <li>Core i7-8550U, 16 Gt, 256Gt+1Tt</li>
+                <ul class="pinfo">
+                    <li>Core i7-8550U, 16 Gt, 256Gt+1Tt</li>
                     <li>14" Full HD (1920x1080) IPS-näyttö</li>
                     <li>AMD Radeon RX 550</li>
                     <li>Taustavalaistu näppäimistö</li>
                 </ul>
-                <p class="hinta"><s>1329,90€</s>   1199,90€</p>
+                <p class="hinta"><s>1329,90€</s> 1199,90€</p>
                 <img class="pkuva" src="../pics/2_473978-2778x2289.jpeg" style="height:132px;">
+                <img class="cart" src="../pics/shopping_cart_PNG33.png" height="30"
+                     onclick="cartClick(6, 'Lenovo ThinkPad E480 14')"/>
             </div>
 
             <div class="tuotteet acc">
                 <h3 class="pname">Kingston DataTraveler 100 G3</h3>
-                <ul class="pinfo"> <li>64Gt nopeata tallennustilaa</li>
+                <ul class="pinfo">
+                    <li>64Gt nopeata tallennustilaa</li>
                     <li>Luotettava ja edullinen</li>
                     <li>USB 3.0 on yhteensopiva 2.0 kanssa</li>
                     <li>100/10Mt luku/kirjoitusnopeus</li>
                 </ul>
                 <p class="hinta">10,90€</p>
                 <img class="pkuva" src="../pics/2_164178-800x500.jpeg" style="height:132px;">
+                <img class="cart" src="../pics/shopping_cart_PNG33.png" height="30"
+                     onclick="cartClick(7, 'Kingston DataTraveler 100 G3')"/>
             </div>
 
             <div class="tuotteet kannettava">
@@ -129,6 +145,8 @@
                 </ul>
                 <p class="hinta">649,90€</p>
                 <img class="pkuva" src="../pics/2_485352-2650x2129.jpg" style="width:164px;height:132px;">
+                <img class="cart" src="../pics/shopping_cart_PNG33.png" height="30"
+                     onclick="cartClick(8, 'Lenovo IdeaPad 330 15,6')"/>
             </div>
 
             <div class="tuotteet pc">
@@ -140,17 +158,22 @@
                 </ul>
                 <p class="hinta">199,90€</p>
                 <img class="pkuva" src="../pics/2_351047-714x408.jpg" style="height:150px;">
+                <img class="cart" src="../pics/shopping_cart_PNG33.png" height="30"
+                     onclick="cartClick(9, 'Corsair Valueselect 32Gt')"/>
             </div>
 
             <div class="tuotteet acc">
                 <h3 class="pname">Corsair Gaming K55 RGB</h3>
-                <ul class="pinfo"> <li>Täysin säädettävä taustavalaistus</li>
+                <ul class="pinfo">
+                    <li>Täysin säädettävä taustavalaistus</li>
                     <li>6 kustomoitavaa painiketta</li>
                     <li>8-painikkeen anti-ghosting</li>
                     <li>Kätevät medianäppäimet</li>
                 </ul>
                 <p class="hinta">54,90€</p>
                 <img class="pkuva" src="../pics/2_358585-1717x686.jpg" style="height:132px;">
+                <img class="cart" src="../pics/shopping_cart_PNG33.png" height="30"
+                     onclick="cartClick(10, 'Corsair Gaming K55 RGB')"/>
             </div>
 
             <div class="tuotteet kannettava">
@@ -161,8 +184,10 @@
                     <li>GeForce GTX 1060 6 Gt</li>
                     <li>1920 x 1080 120 Hz</li>
                 </ul>
-                <p class="hinta"><s>1799,90€</s>   1649,90€</p>
+                <p class="hinta"><s>1799,90€</s> 1649,90€</p>
                 <img class="pkuva" src="../pics/2_489510-1112x760.jpeg" style="height:132px;">
+                <img class="cart" src="../pics/shopping_cart_PNG33.png" height="30"
+                     onclick="cartClick(11, 'Asus GL703GM 17,3')"/>
             </div>
             <div class="tuotteet pc">
                 <h3 class="pname">Samsung 970 EVO 500Gt M.2</h3>
@@ -174,22 +199,26 @@
                 </ul>
                 <p class="hinta">129,90€</p>
                 <img class="pkuva" src="../pics/evo970500.jpg" style="width:292px;height:132px;">
+                <img class="cart" src="../pics/shopping_cart_PNG33.png" height="30"
+                     onclick="cartClick(12, 'Samsung 970 EVO 500gt M.2')"/>
 
             </div>
             <div class="tuotteet acc">
-                <h3 class="pname">Logitech B100 -hiiri</h3>
+                <h3 class="pname">Logitech B100</h3>
                 <ul class="pinfo">
                     <li>Langallinen USB-hiiri</li>
                     <li>Plug and play</li>
                     <li>Miellyttävä, molempikätinen käyttö</li>
                     <li>800 dpi:n optinen tarkkuus</li>
                 </ul>
-                <p class="hinta"><s>12,90€</s>   9,90€</p>
+                <p class="hinta"><s>12,90€</s> 9,90€</p>
                 <img class="pkuva" src="../pics/2_343877-488x338.jpg" style="height:132px;">
+                <img class="cart" src="../pics/shopping_cart_PNG33.png" height="30"
+                     onclick="cartClick(13, 'Logitech B100')"/>
 
             </div>
             <div class="tuotteet acc">
-                <h3 class="pname">HP HDMI - VGA -adapteri</h3>
+                <h3 class="pname">HP HDMI-VGA -adapteri</h3>
                 <ul class="pinfo">
                     <li>Mahdollistaa VGA -liitäntäisen näytön/television kytkemisen HDMI -liitäntään.</li>
 
@@ -197,6 +226,8 @@
                 </ul>
                 <p class="hinta">9,90€</p>
                 <img class="pkuva" src="../pics/2_160206-1104x910.jpeg" style="height:132px;">
+                <img class="cart" src="../pics/shopping_cart_PNG33.png" height="30"
+                     onclick="cartClick(14, 'HP HDMI-VGA -adapteri')"/>
 
             </div>
             <div class="tuotteet puhelin">
@@ -209,6 +240,8 @@
                 </ul>
                 <p class="hinta">378,90€</p>
                 <img class="pkuva" src="../pics/2_459936-338x685.jpeg" style="height:132px;">
+                <img class="cart" src="../pics/shopping_cart_PNG33.png" height="30"
+                     onclick="cartClick(15, 'Nokia 7 Plus')"/>
             </div>
             <div class="tuotteet puhelin">
                 <h3 class="pname">Huawei Mate 20 Lite</h3>
@@ -220,6 +253,9 @@
                 </ul>
                 <p class="hinta">349,00€</p>
                 <img class="pkuva" src="../pics/2_497430-1902x4000.jpg" style="height:132px;">
+                <img class="cart" src="../pics/shopping_cart_PNG33.png" height="30"
+                     onclick="cartClick(16, 'Huawei Mate 20 Lite')"/>
+
             </div>
         </div>
     </div>
@@ -234,6 +270,21 @@
     </form>
 
 </footer>
+
+<script>
+    function cartClick(itemId, ItemName) {
+        var x = itemId;
+        var y = ItemName;
+        if (itemId === 6 || itemId === 8 || itemId === 11) {
+            y = ItemName+"\""
+        }
+        console.log(x + " " + y + " added to cart");
+
+        localStorage.ostoskori += x+",";
+        console.log(localStorage.getItem("ostoskori"));
+    }
+
+</script>
 
 <script>
     kan_nappi = document.getElementById("kannettavat");
