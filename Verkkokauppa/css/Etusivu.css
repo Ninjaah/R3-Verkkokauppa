@@ -8,12 +8,15 @@ body {
     padding-right: 5px;
     text-align: center;
     background-image: url("../pics/hieno.jpg");
-    height: 170px;
     width: 100%;
     border-bottom: solid;
     max-width: 1630px;
     margin: 0 auto;
+    color: white;
+    text-align: right;
 }
+
+
 
 h1 {
     color: yellow;
@@ -28,6 +31,7 @@ h1 {
 }
 
 .login {
+    visibility: hidden;
     margin-top: 0;
     height: 20px;
     text-align: right;
