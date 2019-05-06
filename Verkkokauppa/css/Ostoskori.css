@@ -61,6 +61,13 @@ h3:hover {
     background-color: white;
     padding-top: 10px;
     padding-bottom: 100px;
+    min-height: 500px;
+
+}
+#sisaltoi {
+    max-width: 300px;
+    background-color: white;
+
 }
 
 #kori {
@@ -208,4 +215,8 @@ footer {
     text-align: right;
     margin-top: 20px;
     max-width: 1788px;
+}
+.Yhteystiedot {
+    text-align: center;
+
 }
