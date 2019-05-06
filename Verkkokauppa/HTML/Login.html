@@ -33,8 +33,7 @@
     <div class="keskiosa">
         <h2>Luo käyttäjätunnus</h2>
 
-        <form> <!-- Tämä "yhdistää" html-filun suoraan php-filuun.
-            Voidaan myös käyttää js-filun kautta jos halutaan. -->
+        <form>
             <div class="infot">
                 <label><b>Sähköposti</b></label>
                 <input type="text" placeholder="Sähköposti..." name="email" id="email" required>
@@ -68,9 +67,7 @@
 
         var xmlreq = new XMLHttpRequest();
 
-
-
-
+        var status;
 
         var email = document.getElementById("email").value;
         var pw = document.getElementById("password").value;
@@ -91,14 +88,12 @@
 
         function callback_handler() {
 
-            var status;
-
             if (xmlreq.readyState === 4 && xmlreq.status === 200) {
                 status = xmlreq.responseText;
 
             }
 
-            if (status) {
+            if (status === 1) {
                 document.getElementById("status").innerHTML = "Käyttäjän luonti onnistui!";
 
             } else {
@@ -107,7 +102,7 @@
             }
         }
 
-
+    return false;
 
     }
 

@@ -34,8 +34,8 @@ if (!empty($email) && !empty($password)) {
 $result = mysqli_query($connect, $sqlQuery);
 
 if (!$result) {
-    echo false;
+    echo 0;
 }
 else {
-    echo true;
+    echo 1;
 }
