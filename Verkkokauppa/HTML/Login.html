@@ -68,7 +68,7 @@
 
         var xmlreq = new XMLHttpRequest();
 
-        var status;
+
 
 
 
@@ -91,12 +91,14 @@
 
         function callback_handler() {
 
-            if (xmlreq.readyState == 4 && xmlreq.status == 200) {
+            var status;
+
+            if (xmlreq.readyState === 4 && xmlreq.status === 200) {
                 status = xmlreq.responseText;
 
             }
 
-            if (status == 1) {
+            if (status) {
                 document.getElementById("status").innerHTML = "Käyttäjän luonti onnistui!";
 
             } else {
@@ -104,6 +106,8 @@
 
             }
         }
+
+
 
     }
 

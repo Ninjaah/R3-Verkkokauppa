@@ -23,8 +23,11 @@ if(!$connect) {
 $email = $_POST['email'];
 $password = $_POST['password'];
 
+echo $email;
+echo $password;
+
 //?-merkillä merkityt ovat vain placeholder-nimiä...
-if (!empty($email) || !empty($password)) {
+if (!empty($email) && !empty($password)) {
     $sqlQuery = "INSERT INTO users (email, password) VALUES ('$email', '$password')";
 }
 
