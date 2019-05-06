@@ -20,21 +20,19 @@ if(!$connect) {
 }
 
 //Nämä samat kuin Login.html filussa. Siellä oma kommentti form-elementin sisällä.
-$email = $_POST["email"];
-$password = $_POST["ss"];
+$email = $_POST['email'];
+$password = $_POST['password'];
 
 //?-merkillä merkityt ovat vain placeholder-nimiä...
-$sqlQuery = "INSERT INTO users (email, password) VALUES ('$email', '$password')";
+if (!empty($email) || !empty($password)) {
+    $sqlQuery = "INSERT INTO users (email, password) VALUES ('$email', '$password')";
+}
 
 $result = mysqli_query($connect, $sqlQuery);
 
 if (!$result) {
-    echo "Käyttäjätilin luonti epäonnistui!";
+    echo false;
 }
-
 else {
-    echo "Käyttäjätilin luonti onnistui!";
+    echo true;
 }
-
-
-header("Location: ../HTML/Etusivu.html");
