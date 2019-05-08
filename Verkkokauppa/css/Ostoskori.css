@@ -57,25 +57,47 @@ h3:hover {
 }
 
 #sisalto {
-    max-width: 1630px;
+    max-width: 1635px;
     margin: 0 auto;
     background-color: white;
     padding-top: 10px;
     padding-bottom: 100px;
     min-height: 500px;
+    display: flex;
 
 }
-#sisaltoi {
-    max-width: 300px;
-    background-color: white;
-
-}
-
 #kori {
     margin-left: 100px;
     max-width: 700px;
 }
+@media only screen and (max-width: 1240px) {
+    #sisalto{
 
+        display: grid
+    }
+    #kori {
+        margin: 10px;
+    }
+}
+#sisaltoi {
+    max-width: 300px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+
+.infot {
+    display: flex;
+    flex-flow: column;
+    width: 300px;
+    padding: 20px;
+}
+.infot input {
+    margin-bottom: 5px;
+}
+input {
+    max-width: 200px;
+}
 table {
     text-align: left;
 }
@@ -92,60 +114,20 @@ td {
 #ostoskori p {
 
 }
-
+@media only screen and (max-width: 425px) {
+    #ostoskori img {
+        height: 50px;
+    }
+}
 #total {
     float: right;
     margin-right: 120px;
 }
 
 #sisaltoi {
-
-}
-@media only screen and (min-width: 2560px) {
-    #sisalto{
-
-    }
+margin: 50px;
 }
 
-#kategoriat {
-    width: 180px;
-    margin: 10px;
-    display: inline-block;
-}
-
-#kategoriat li {
-    font-size: 18px;
-    color: black;
-    display: inline-block;
-    list-style-type: none;
-    padding: 5px 20px;
-    float: none;
-    margin: 2px;
-    background-color: white;
-    width: 190px;
-    border: 1px solid black;
-}
-
-#kategoriat li:hover{
-    background-color: lightcoral;
-}
-
-
-#tuotelista {
-    text-align: center;
-    max-width: 1350px;
-    float: right;
-}
-
-.tuotteet {
-    height: 283px;
-    width: 300px;
-    display: inline-block;
-    margin: 15px 15px;
-    border: 1px solid black;
-    background-color: #ffffff;
-    position: relative;
-}
 
 
 .pname {
@@ -171,23 +153,6 @@ td {
     margin: 0;
 }
 
-.cart {
-    position: absolute;
-    bottom: 3px;
-    right: 3px;
-    background-color: rgba(113, 218, 0, 0.71);
-    border-radius: 4px;
-    border: 1px solid darkgreen;
-}
-
-.cart:hover {
-    position: absolute;
-    bottom: 3px;
-    right: 3px;
-    background-color: rgb(88, 175, 0);
-    border-radius: 4px;
-    border: 1px solid darkgreen;
-}
 
 .hidden {
     display:none;

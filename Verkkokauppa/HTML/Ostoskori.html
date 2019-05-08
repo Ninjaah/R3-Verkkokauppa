@@ -28,6 +28,7 @@
         <h1>Verkkokauppa</h1>
         <div class="haku">
             <div class="nav">
+                <a href="Etusivu.html">Etusivu</a>
                 <a href="Verkkokauppa.html">Tuotteet</a>
                 <a href="Ostoskori.html">Ostoskori</a>
             </div>
@@ -45,14 +46,38 @@
                 <th>Hinta</th>
                 <th></th>
             </tr>
+
         </table>
 
         <p id="total">Yhteensä: 0€</p>
         <button onclick="clearKori()">Tyhjennä Ostoskori</button>
+
     </div>
 
     <div id="sisaltoi">
+        <form>
+            <div class="infot">
+                <label><b>Tilaajan tiedot</b></label>
+                <br>
+                <label><b>Nimi</b></label>
+                <input type="text" placeholder="Etu- ja sukunimi" id="name" required>
 
+                <label><b>Sähköposti</b></label>
+                <input type="email" placeholder="Sähköposti..." id="email" required>
+                <br>
+                <label><b>Toimitus-osoite</b></label>
+                <input type="text" placeholder="Esim. Metsätie 13" id="osoite" required>
+                <label><b>Postinumero</b></label>
+                <input type="text" placeholder="Esim. 02600 Espoo" id="postiosoite" required>
+                <br>
+                <label><b>Maksutapa toistaiseksi vain lasku</b></label>
+                <br>
+                <div class="napit">
+                    <button type="submit" class="tilaus" onclick="teeTilaus()">Vahvista tilaus</button>
+                    <p id="status"></p>
+                </div>
+            </div>
+        </form>
     </div>
 </div>
 
