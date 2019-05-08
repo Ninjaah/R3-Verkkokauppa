@@ -26,6 +26,9 @@ function addUser() {
             if (xmlreq.responseText === '1') {
                 document.getElementById("status").innerHTML = "Käyttäjän luonti onnistui!";
 
+                document.getElementById("email").value = '';
+                document.getElementById("password").value = '';
+
             } else if (xmlreq.responseText === '0') {
                 document.getElementById("status").innerHTML = "Käyttäjän luonti epäonnistui!";
 

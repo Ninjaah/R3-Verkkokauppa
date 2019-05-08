@@ -17,11 +17,13 @@
             <a href="Login.html">Luo tunnus</a>
 
             <div id="lomake" class="login">
-                <form name="login" class="kayttaja">
-                    <input type="email" name="sposti" id="sposti" placeholder="Sähköposti.."></input>
-                    <input type="password" name="psw" id="psw" placeholder="Salasana.."></input>
-                    <button type="button" id="kirjaudu" onclick="getUser()">Kirjaudu</button>
+                <form name="login" class="kayttaja" action="javascript:getUser()">
+                    <input type="email" name="sposti" id="sposti" placeholder="Sähköposti.." required></input>
+                    <input type="password" name="psw" id="psw" placeholder="Salasana.." required></input>
+                    <button type="submit" id="kirjaudu" >Kirjaudu</button>
                     <p id="login"></p>
+
+                </form>
 
                 </form>
                 <script language="JavaScript">
@@ -50,7 +52,7 @@
     <div class="keskiosa">
         <h2>Luo käyttäjätunnus</h2>
 
-        <form>
+        <form action="javascript:addUser()">
             <div class="infot">
                 <label><b>Sähköposti</b></label>
                 <input type="email" placeholder="Sähköposti..." name="email" id="email" required>
@@ -61,7 +63,7 @@
 
                 <input type="checkbox" checked="checked"> Muista minut
                 <div class="napit">
-                    <button type="button" class="signup" onclick="addUser()">Luo tili</button>
+                    <button type="submit" class="signup">Luo tili</button>
                     <p id="status"></p>
                 </div>
             </div>

@@ -31,6 +31,9 @@ function getUser() {
 
                 localStorage.setItem("email", email);
 
+                document.getElementById("sposti").value = '';
+                document.getElementById("psw").value = '';
+
             } else {
                 document.getElementById("login").innerHTML = "Kirjautuminen epäonnistui!";
 
