@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verkkokauppa</title>
     <link rel="stylesheet" href="../css/Etusivu.css">
+    <script src="../JS/addtocart.js"></script>
+    <script src="../JS/showLogin.js"></script>
 </head>
 <body>
 <div id="sisalto">
@@ -20,17 +22,7 @@
                     <button id="kirjaudu">Kirjaudu</button>
 
                 </form>
-                <script language="JavaScript">
-                    function showLogin() {
 
-                        var x = document.getElementById('lomake');
-                        if (x.style.visibility === 'hidden') {
-                            x.style.visibility = 'visible';
-                        } else {
-                            x.style.visibility = 'hidden';
-                        }
-                    }
-                </script>
 
 
             </div>
@@ -99,18 +91,7 @@
         </div>
     </div>
 </div>
-<script>
-    function cartClick(itemId, ItemName) {
-        var x = itemId;
-        var y = ItemName;
-        if (itemId === 6 || itemId === 8 || itemId === 11) {
-            y = ItemName+"\""
-        }
-        console.log(x + " " + y + " added to cart");
-        localStorage.ostoskori += ","+x;
-        console.log(localStorage.getItem("ostoskori"));
-    }
-</script>
+
 
 <div class="Yhteystiedot">
     <h2>Yhteystietomme</h2>

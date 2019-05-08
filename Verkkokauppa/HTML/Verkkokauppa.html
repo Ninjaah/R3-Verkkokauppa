@@ -5,15 +5,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/Verkkokauppa.css">
+    <script src="../JS/addtocart.js"></script>
+    <script src="../JS/showLogin.js"></script>
+
 </head>
 <body>
 <header>
     <div class="top">
         <div class="login">
-            <form class="kayttaja">
-                <input type="email" name="sposti" placeholder="Sähköposti.."></input>
-                <input type="password" name="psw" placeholder="Salasana.."></input>
-                <button id="kirjaudu">Kirjaudu</button>
+            <div id="lomake" class="login">
+                <form name="login" class="kayttaja">
+                    <input type="email" name="sposti" placeholder="Sähköposti.."></input>
+                    <input type="password" name="psw" placeholder="Salasana.."></input>
+                    <button id="kirjaudu">Kirjaudu</button>
+
+                </form>
                 <a href="Login.html">Luo tunnus</a>
             </form>
         </div>
@@ -260,7 +266,11 @@
 </div>
 
 <footer>
+    <div class="Yhteystiedot">
+        <h2>Yhteystietomme</h2>
+        <br>Käyntiosoite: Kalevankatu 3 </br>Sähköposti: Verkkokauppa@metropolia.fi </br>Puhelinnumero: 0400 123 123</p>
 
+    </div>
     <form>
         Tilaa uutiskirjeemme
         <input type="email" name="newsletter" placeholder="Email...">
@@ -269,180 +279,7 @@
 
 </footer>
 
-<script>
 
-    function cartClick(itemId, ItemName) {
-
-        var x = itemId;
-        var y = ItemName;
-        if (itemId === 6 || itemId === 8 || itemId === 11) {
-            y = ItemName+"\""
-        }
-        console.log(x + " " + y + " added to cart");
-
-        localStorage.ostoskori += ","+x;
-        console.log(localStorage.getItem("ostoskori"));
-    }
-
-</script>
-
-<script>
-    kan_nappi = document.getElementById("kannettavat");
-    kan_nappi.onclick = function () {
-        var pcels = document.querySelectorAll('.tuotteet.pc');
-        for (var i = 0; i < pcels.length; i++) {
-            pcels[i].classList.remove('tuotteet')
-        }
-        for (var i = 0; i < pcels.length; i++) {
-            pcels[i].classList.add('hidden')
-        }
-        var puhels = document.querySelectorAll('.tuotteet.puhelin');
-        for (var i = 0; i < puhels.length; i++) {
-            puhels[i].classList.remove('tuotteet')
-        }
-        for (var i = 0; i < puhels.length; i++) {
-            puhels[i].classList.add('hidden')
-        }
-        var kanels = document.querySelectorAll('.kannettava');
-        for (var i = 0; i < kanels.length; i++) {
-            kanels[i].classList.remove('hidden')
-        }
-        for (var i = 0; i < kanels.length; i++) {
-            kanels[i].classList.add('tuotteet')
-        }
-        var accels = document.querySelectorAll('.tuotteet.acc');
-        for (var i = 0; i < accels.length; i++) {
-            accels[i].classList.remove('tuotteet')
-        }
-        for (var i = 0; i < accels.length; i++) {
-            accels[i].classList.add('hidden')
-        }
-    };
-    pc_nappi = document.getElementById("pckomp");
-    pc_nappi.onclick = function () {
-        var pcels = document.querySelectorAll('.pc');
-        for (var i = 0; i < pcels.length; i++) {
-            pcels[i].classList.remove('hidden')
-        }
-        for (var i = 0; i < pcels.length; i++) {
-            pcels[i].classList.add('tuotteet')
-        }
-        var puhels = document.querySelectorAll('.tuotteet.puhelin');
-        for (var i = 0; i < puhels.length; i++) {
-            puhels[i].classList.remove('tuotteet')
-        }
-        for (var i = 0; i < puhels.length; i++) {
-            puhels[i].classList.add('hidden')
-        }
-        var kanels = document.querySelectorAll('.tuotteet.kannettava');
-        for (var i = 0; i < kanels.length; i++) {
-            kanels[i].classList.remove('tuotteet')
-        }
-        for (var i = 0; i < kanels.length; i++) {
-            kanels[i].classList.add('hidden')
-        }
-        var accels = document.querySelectorAll('.tuotteet.acc');
-        for (var i = 0; i < accels.length; i++) {
-            accels[i].classList.remove('tuotteet')
-        }
-        for (var i = 0; i < accels.length; i++) {
-            accels[i].classList.add('hidden')
-        }
-    };
-    puh_nappi = document.getElementById("puhelimet");
-    puh_nappi.onclick = function () {
-        var pcels = document.querySelectorAll('.tuotteet.pc');
-        for (var i = 0; i < pcels.length; i++) {
-            pcels[i].classList.remove('tuotteet')
-        }
-        for (var i = 0; i < pcels.length; i++) {
-            pcels[i].classList.add('hidden')
-        }
-        var puhels = document.querySelectorAll('.puhelin');
-        for (var i = 0; i < puhels.length; i++) {
-            puhels[i].classList.remove('hidden')
-        }
-        for (var i = 0; i < puhels.length; i++) {
-            puhels[i].classList.add('tuotteet')
-        }
-        var kanels = document.querySelectorAll('.tuotteet.kannettava');
-        for (var i = 0; i < kanels.length; i++) {
-            kanels[i].classList.remove('tuotteet')
-        }
-        for (var i = 0; i < kanels.length; i++) {
-            kanels[i].classList.add('hidden')
-        }
-        var accels = document.querySelectorAll('.tuotteet.acc');
-        for (var i = 0; i < accels.length; i++) {
-            accels[i].classList.remove('tuotteet')
-        }
-        for (var i = 0; i < accels.length; i++) {
-            accels[i].classList.add('hidden')
-        }
-    };
-    acc_nappi = document.getElementById("accessories");
-    acc_nappi.onclick = function () {
-        var pcels = document.querySelectorAll('.tuotteet.pc');
-        for (var i = 0; i < pcels.length; i++) {
-            pcels[i].classList.remove('tuotteet')
-        }
-        for (var i = 0; i < pcels.length; i++) {
-            pcels[i].classList.add('hidden')
-        }
-        var puhels = document.querySelectorAll('.tuotteet.puhelin');
-        for (var i = 0; i < puhels.length; i++) {
-            puhels[i].classList.remove('tuotteet')
-        }
-        for (var i = 0; i < puhels.length; i++) {
-            puhels[i].classList.add('hidden')
-        }
-        var kanels = document.querySelectorAll('.tuotteet.kannettava');
-        for (var i = 0; i < kanels.length; i++) {
-            kanels[i].classList.remove('tuotteet')
-        }
-        for (var i = 0; i < kanels.length; i++) {
-            kanels[i].classList.add('hidden')
-        }
-        var accels = document.querySelectorAll('.acc');
-        for (var i = 0; i < accels.length; i++) {
-            accels[i].classList.remove('hidden')
-        }
-        for (var i = 0; i < accels.length; i++) {
-            accels[i].classList.add('tuotteet')
-        }
-    };
-    kaik_nappi = document.getElementById("kaikki");
-    kaik_nappi.onclick = function () {
-        var pcels = document.querySelectorAll('.pc');
-        for (var i = 0; i < pcels.length; i++) {
-            pcels[i].classList.remove('hidden')
-        }
-        for (var i = 0; i < pcels.length; i++) {
-            pcels[i].classList.add('tuotteet')
-        }
-        var puhels = document.querySelectorAll('.puhelin');
-        for (var i = 0; i < puhels.length; i++) {
-            puhels[i].classList.remove('hidden')
-        }
-        for (var i = 0; i < puhels.length; i++) {
-            puhels[i].classList.add('tuotteet')
-        }
-        var kanels = document.querySelectorAll('.kannettava');
-        for (var i = 0; i < kanels.length; i++) {
-            kanels[i].classList.remove('hidden')
-        }
-        for (var i = 0; i < kanels.length; i++) {
-            kanels[i].classList.add('tuotteet')
-        }
-        var accels = document.querySelectorAll('.acc');
-        for (var i = 0; i < accels.length; i++) {
-            accels[i].classList.remove('hidden')
-        }
-        for (var i = 0; i < accels.length; i++) {
-            accels[i].classList.add('tuotteet')
-        }
-
-    };
-</script>
+<script src="../JS/tuotteet.js"></script>
 </body>
 </html>

@@ -129,6 +129,7 @@ h3:hover {
 }
 .hinta s {
     font-weight: normal;
+    color: red;
 }
 .pkuva {
     margin: 0;
@@ -173,10 +174,13 @@ a:active {
 footer {
     height: 100px;
     background-color: grey;
-    z-index: 10;
-    position: relative;
     clear: both;
     text-align: right;
     margin-top: 20px;
-    max-width: 1788px;
+    margin-bottom: 5px;
+    max-width: 1900px;
+}
+.Yhteystiedot {
+    text-align: center;
+
 }
