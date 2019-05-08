@@ -226,3 +226,11 @@ function poistatuote(rivi) {        // Ei toimi oikein
     document.getElementById("total").innerText = "Yhteensä: " + summaf + "€";
 
 }
+
+var email = window.localStorage.email;
+
+if (email != null) {
+    document.getElementById("email").value = email;
+} else {
+    console.log("Ei kirjautunut");
+}
