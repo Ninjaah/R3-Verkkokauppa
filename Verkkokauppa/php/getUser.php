@@ -16,7 +16,7 @@ $connect = mysqli_connect($server, $user, $pw, $db);
 
 if(!$connect) {
     die("ERROR: Cannot connect to database $db on server $server using user name $user (" . mysqli_connect_errno() .
-    ", " . mysqli_connect_error() . ")");
+        ", " . mysqli_connect_error() . ")");
 }
 
 //Nämä samat kuin Login.html filussa. Siellä oma kommentti form-elementin sisällä.
@@ -26,14 +26,16 @@ $password = $_POST['password'];
 
 //?-merkillä merkityt ovat vain placeholder-nimiä...
 if (!empty($email) && !empty($password)) {
-    $sqlQuery = "INSERT INTO users (email, password) VALUES ('$email', '$password')";
+    $sqlQuery = "SELECT * FROM users WHERE email='$email' AND password='$password'";
 }
 
 $result = mysqli_query($connect, $sqlQuery);
 
-if (!$result) {
+if ($result->num_rows === 0 || empty($result)) {
     echo 0;
 }
 else {
     echo 1;
 }
+
+?>

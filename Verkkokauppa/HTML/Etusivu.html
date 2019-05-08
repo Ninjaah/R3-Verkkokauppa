@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/Etusivu.css">
     <script src="../JS/addtocart.js"></script>
     <script src="../JS/showLogin.js"></script>
+    <script src="../JS/getUser.js"></script>
 </head>
 <body>
 <div id="sisalto">
@@ -14,12 +15,18 @@
         <div class="top">
             <a onclick="showLogin()">Kirjaudu</a>
             <a href="Login.html">Luo tunnus</a>
+
             <div id="lomake" class="login">
-                <form name="login" class="kayttaja">
-                    <input type="email" name="sposti" placeholder="Sähköposti.."></input>
-                    <input type="password" name="psw" placeholder="Salasana.."></input>
-                    <button id="kirjaudu">Kirjaudu</button>
+                <form name="login" class="kayttaja" action=getUser()>
+                    <input type="email" name="sposti" id="sposti" placeholder="Sähköposti.." required></input>
+                    <input type="password" name="psw" id="psw" placeholder="Salasana.." required></input>
+                    <button type="button" id="kirjaudu" onclick="getUser()">Kirjaudu</button>
+                    <p id="login"></p>
+
                 </form>
+
+
+
             </div>
             <h1>Verkkokauppa</h1>
             <div class="haku">
