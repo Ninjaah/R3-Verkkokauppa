@@ -12,8 +12,7 @@ function addUser() {
 
     var vars = "email=" + email + "&password=" + pw;
 
-
-    xmlreq.open("POST", "../php/addUser.php", true);
+    xmlreq.open("POST", "../php/addUser.php",true);
 
     xmlreq.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
@@ -24,17 +23,18 @@ function addUser() {
     function callback_handler() {
 
         if (xmlreq.readyState === 4 && xmlreq.status === 200) {
-            status = xmlreq.responseText;
+            if (xmlreq.responseText === '1') {
+                document.getElementById("status").innerHTML = "Käyttäjän luonti onnistui!";
+
+            } else if (xmlreq.responseText === '0') {
+                document.getElementById("status").innerHTML = "Käyttäjän luonti epäonnistui!";
+
+            }
 
         }
 
-        if (status === 1) {
-            document.getElementById("status").innerHTML = "Käyttäjän luonti onnistui!";
 
-        } else {
-            document.getElementById("status").innerHTML = "Käyttäjän luonti epäonnistui!";
-
-        }
     }
+
 
 }

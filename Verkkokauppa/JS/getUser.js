@@ -26,7 +26,7 @@ function getUser() {
         if (xmlreq.readyState === 4 && xmlreq.status === 200) {
             status = xmlreq.responseText;
 
-            if (status === 1) {
+            if (status === '1') {
                 document.getElementById("login").innerHTML = "Kirjautuminen onnistui!";
 
                 localStorage.setItem("email", email);
@@ -37,7 +37,6 @@ function getUser() {
             }
 
         }
-
 
     }
 
