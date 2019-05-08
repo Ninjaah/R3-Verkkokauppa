@@ -5,13 +5,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/tuotesivu.css">
+    <script src="../JS/showLogin.js"></script>
 </head>
 <body>
 <header>
     <div class="top">
         <div class="login">
-            <a>Login</a>
+            <a onclick="showLogin()">Login</a>
             <a>Sign up</a>
+
+            <div id="lomake" class="login">
+                <form name="login" class="kayttaja" action=getUser()>
+                    <input type="email" name="sposti" id="sposti" placeholder="Sähköposti.." required></input>
+                    <input type="password" name="psw" id="psw" placeholder="Salasana.." required></input>
+                    <button type="button" id="kirjaudu" onclick="getUser()">Kirjaudu</button>
+                    <p id="login"></p>
+
+                </form>
         </div>
         <h1>Verkkokauppa</h1>
         <div class="haku">
