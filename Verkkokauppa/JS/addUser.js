@@ -32,6 +32,8 @@ function addUser() {
             } else if (xmlreq.responseText === '0') {
                 document.getElementById("status").innerHTML = "Käyttäjän luonti epäonnistui!";
 
+            } else if (xmlreq.responseText === '2') {
+                document.getElementById("status").innerHTML = "Käyttäjän on jo luotu!";
             }
 
         }
