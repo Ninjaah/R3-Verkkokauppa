@@ -117,7 +117,7 @@ margin-left: 510px;
 
 
 a:link {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 a:visited {
@@ -138,4 +138,8 @@ footer {
     margin-top: 20px;
 
     max-width: 1767px;
+}
+.Yhteystiedot {
+    text-align: center;
+
 }
