@@ -23,17 +23,25 @@ if(!$connect) {
 $email = $_POST['email'];
 $password = $_POST['password'];
 
+$sqlQuery = "SELECT * FROM users WHERE email='$email'";
 
-//?-merkillä merkityt ovat vain placeholder-nimiä...
-if (!empty($email) && !empty($password)) {
+$result1 = mysqli_query($connect, $sqlQuery);
+
+if ($result1->num_rows === 0) {
+
     $sqlQuery = "INSERT INTO users (email, password) VALUES ('$email', '$password')";
+
+    $result2 = mysqli_query($connect, $sqlQuery);
+
+    if (!$result2) {
+        echo 0;
+    }
+    else {
+        echo 1;
+    }
+
+} else {
+    echo 2;
 }
 
-$result = mysqli_query($connect, $sqlQuery);
-
-if (!$result) {
-    echo 0;
-}
-else {
-    echo 1;
-}
+?>

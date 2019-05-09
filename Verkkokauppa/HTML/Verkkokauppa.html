@@ -17,10 +17,10 @@
         <a href="Login.html">Luo tunnus</a>
 
         <div id="lomake" class="login">
-            <form name="login" class="kayttaja" action=getUser()>
-                <input type="email" name="sposti" id="sposti" placeholder="Sähköposti.." required></input>
-                <input type="password" name="psw" id="psw" placeholder="Salasana.." required></input>
-                <button type="button" id="kirjaudu" onclick="getUser()">Kirjaudu</button>
+            <form name="login" class="kayttaja" action="javascript:getUser()">
+                <input type="email" name="sposti" id="sposti" placeholder="Sähköposti.." required>
+                <input type="password" name="psw" id="psw" placeholder="Salasana.." required>
+                <button type="submit" id="kirjaudu">Kirjaudu</button>
                 <p id="login"></p>
 
             </form>
