@@ -67,7 +67,7 @@ h3:hover {
 }
 #kori {
     margin-left: 100px;
-    max-width: 700px;
+    width: 700px;
 }
 @media only screen and (max-width: 1240px) {
     #sisalto{
@@ -82,6 +82,8 @@ h3:hover {
     max-width: 300px;
     background-color: white;
     border: 1px solid black;
+    margin: 50px;
+
 }
 
 
@@ -99,6 +101,7 @@ input {
 }
 table {
     text-align: left;
+    min-width: 500px;
 }
 
 td {
@@ -123,9 +126,6 @@ td {
     margin-right: 120px;
 }
 
-#sisaltoi {
-margin: 50px;
-}
 
 
 

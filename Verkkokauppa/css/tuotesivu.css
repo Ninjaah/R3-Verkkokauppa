@@ -1,6 +1,5 @@
 body {
     background-color: grey;
-    margin: 0;
 }
 
 .top {
@@ -21,6 +20,12 @@ h1 {
     text-align: center;
 }
 
+h3 {
+    color: black;
+}
+h3:hover {
+    text-decoration: underline;
+}
 .login {
     visibility: hidden;
     margin-top: 0;
@@ -28,7 +33,6 @@ h1 {
     text-align: right;
     color: white;
 }
-
 .haku {
     margin-top: 60px;
     height: 30px;

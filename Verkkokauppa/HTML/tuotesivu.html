@@ -5,24 +5,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/tuotesivu.css">
+    <script src="../JS/ostoskori.js"></script>
+    <script src="../JS/addtocart.js"></script>
     <script src="../JS/showLogin.js"></script>
-    <script src="../JS/addUser.js"></script>
+
 </head>
 <body>
 <header>
     <div class="top">
+        <a onclick="showLogin()">Kirjaudu</a>
+        <a href="Login.html">Luo tunnus</a>
 
-            <a onclick="showLogin()">Kirjaudu</a>
-            <a href="Login.html">Luo tunnus</a>
+        <div id="lomake" class="login">
+            <form name="login" class="kayttaja" action=getUser()>
+                <input type="email" name="sposti" id="sposti" placeholder="Sähköposti.." required>
+                <input type="password" name="psw" id="psw" placeholder="Salasana.." required>
+                <button type="button" id="kirjaudu" onclick="getUser()">Kirjaudu</button>
+                <p id="login"></p>
 
-            <div id="lomake" class="login">
-                <form name="login" class="kayttaja" action="javascript:getUser()">
-                    <input type="email" name="sposti" id="sposti" placeholder="Sähköposti.." required></input>
-                    <input type="password" name="psw" id="psw" placeholder="Salasana.." required></input>
-                    <button type="submit" id="kirjaudu">Kirjaudu</button>
-                    <p id="login"></p>
-
-                </form>
+            </form>
         </div>
         <h1>Verkkokauppa</h1>
         <div class="haku">
@@ -72,7 +73,7 @@
         Paino: 1,88 kg<br>
         </p>
     </div>
-    <p><button id="lisaa">Lisää ostoskoriin</button></p>
+    <p><button id="lisaa" onclick="cartClick(2, 'MSI 15,6 P65 Creator 8RD')">Lisää ostoskoriin</button></p>
     <div id="thumbs"><img class="thumb kuva" id="kuva1t" src="../pics/msi2.png"> <img class="thumb" id="kuva2t" src="../pics/msi3.png"> <img class="thumb" id="kuva3t" src="../pics/msi4.png"></div>
 </div>
 <footer>
@@ -84,103 +85,6 @@
     </form>
 
 </footer>
-<script>
-    kan_nappi = document.getElementById("kuva1t");
-    kan_nappi.onclick = function () {
-        var kuva = document.querySelectorAll('.nakyy');
-        for (var i = 0; i < kuva.length; i++) {
-            kuva[i].classList.remove('nakyy')
-        }
-        for (var i = 0; i < kuva.length; i++) {
-            kuva[i].classList.add('hidden')
-        }
-        var kuva = document.getElementById('kuva1');
-        kuva.classList.remove('hidden');
-        kuva.classList.add('nakyy');
-    };
-
-    kan_nappi = document.getElementById("kuva2t");
-    kan_nappi.onclick = function () {
-    var kuva = document.querySelectorAll('.nakyy');
-    for (var i = 0; i < kuva.length; i++) {
-        kuva[i].classList.remove('nakyy')
-    }
-    for (var i = 0; i < kuva.length; i++) {
-        kuva[i].classList.add('hidden')
-    }
-    var kuva = document.getElementById('kuva2');
-    kuva.classList.remove('hidden');
-    kuva.classList.add('nakyy');
-    };
-
-    kan_nappi = document.getElementById("kuva3t");
-    kan_nappi.onclick = function () {
-        var kuva = document.querySelectorAll('.nakyy');
-        for (var i = 0; i < kuva.length; i++) {
-            kuva[i].classList.remove('nakyy')
-        }
-        for (var i = 0; i < kuva.length; i++) {
-            kuva[i].classList.add('hidden')
-        }
-        var kuva = document.getElementById('kuva3');
-        kuva.classList.remove('hidden');
-        kuva.classList.add('nakyy');
-    };
-
-    function getUser() {
-
-        var xmlreq = new XMLHttpRequest();
-
-        var status;
-
-        var email = document.getElementById("sposti").value;
-        var pw = document.getElementById("psw").value;
-
-        console.log(sposti);
-        console.log(psw);
-
-        var vars = "email="+email+"&password="+pw;
-
-
-        xmlreq.open("POST", "../php/getUser.php", true);
-
-        xmlreq.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-
-        xmlreq.onreadystatechange = callback_handler;
-
-        xmlreq.send(vars);
-
-        function callback_handler() {
-
-            if (xmlreq.readyState === 4 && xmlreq.status === 200) {
-                status = xmlreq.responseText;
-
-                if (status === 1) {
-                    document.getElementById("login").innerHTML = "Kirjautuminen onnistui!";
-
-                    localStorage.setItem("email", email);
-
-                } else {
-                    document.getElementById("login").innerHTML = "Kirjautuminen epäonnistui!";
-
-                }
-
-            }
-
-
-        }
-
-        return false;
-
-    }
-
-</script>
-<script>
-    console.log(screen.width);
-    if (screen.width < 1255){
-        var info = document.getElementById('tuotekuva');
-        info.appendChild(document.getElementById('thumbs'));
-    }
-</script>
+<script src="../JS/tuotesivu.js"></script>
 </body>
 </html>
