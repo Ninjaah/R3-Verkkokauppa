@@ -67,7 +67,18 @@ h3:hover {
 }
 #kori {
     margin-left: 100px;
-    width: 700px;
+    max-width: 700px;
+}
+table {
+    text-align: left;
+    min-width: 500px;
+}
+#sisaltoi {
+    max-width: 300px;
+    background-color: white;
+    border: 1px solid black;
+    margin: 50px;
+
 }
 @media only screen and (max-width: 1240px) {
     #sisalto{
@@ -77,14 +88,14 @@ h3:hover {
     #kori {
         margin: 10px;
     }
+    table {
+        min-width: 100px;
+    }
+    #sisaltoi {
+        margin: 5px;
+    }
 }
-#sisaltoi {
-    max-width: 300px;
-    background-color: white;
-    border: 1px solid black;
-    margin: 50px;
 
-}
 
 
 .infot {
@@ -99,10 +110,6 @@ h3:hover {
 input {
     max-width: 200px;
 }
-table {
-    text-align: left;
-    min-width: 500px;
-}
 
 td {
     text-align: left;
@@ -115,6 +122,15 @@ td {
 
 #ostoskori p {
 
+}
+@media only screen and (max-width: 650px){
+    td {
+     max-width: 500px;
+    }
+    #kori {
+        text-align: left;
+        min-width: 100px;
+    }
 }
 @media only screen and (max-width: 425px) {
     #ostoskori img {
